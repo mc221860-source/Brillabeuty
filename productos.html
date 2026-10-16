@@ -1,0 +1,113 @@
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Productos | BrillaBeuty</title>
+    <link rel="stylesheet" href="css/estilos.css">
+    <script src="js/productos.js" defer></script>
+</head>
+<body>
+
+<header>
+    <h1>BrillaBeuty</h1>
+    <p>Tu belleza, nuestra pasión</p>
+</header>
+
+<nav>
+    <a href="index.html">Inicio</a>
+    <a href="productos.html">Productos</a>
+    <a href="contacto.html">Contacto</a>
+    <a href="nosotros.html">Sobre nosotros</a>
+    <a href="ubicacion.html">Ubicación</a>
+    <a href="#carrito" onclick="mostrarCarritoPanel(event)">
+        🛒 Carrito (<span id="cantidad-menu">0</span>)
+    </a>
+</nav>
+
+<main>
+    <h2>Nuestro catálogo</h2>
+    <p>Encuentra tus productos favoritos de belleza.</p>
+
+    <label for="categoria">Escoge una categoría:</label>
+
+    <select id="categoria">
+        <option value="Todos">Todos los productos</option>
+        <option value="Skincare">Skincare</option>
+        <option value="Bases">Bases</option>
+        <option value="Correctores">Correctores</option>
+        <option value="Polvos">Polvos</option>
+        <option value="Rubores">Rubores</option>
+        <option value="Pestañinas">Pestañinas</option>
+        <option value="Iluminadores">Iluminadores</option>
+        <option value="Sombras">Sombras</option>
+        <option value="Labiales">Labiales</option>
+        <option value="Delineadores">Delineadores</option>
+      
+    </select>
+
+    <div class="catalogo-con-carrito">
+        <div id="lista-productos"></div>
+    </div>
+</main>
+
+<!-- CARRITO LATERAL -->
+<section class="carrito" id="carrito">
+    <div class="encabezado-carrito">
+        <h2>Mi carrito</h2>
+        <button class="cerrar-carrito" onclick="ocultarCarrito()"
+                type="button">&times;</button>
+    </div>
+
+    <p>Productos: <span id="cantidad-carrito">0</span></p>
+
+    <div id="lista-carrito">
+        <p>Tu carrito está vacío.</p>
+    </div>
+
+    <h3>Total: $<span id="total-carrito">0</span></h3>
+
+    <button type="button" onclick="vaciarCarrito()">
+        Vaciar carrito
+    </button>
+
+    <button type="button" onclick="finalizarCompra()">
+        Finalizar compra
+    </button>
+</section>
+
+<!-- MENSAJE DE CONFIRMACIÓN -->
+<div id="mensaje-agregado" class="mensaje-agregado">
+    ¡Producto agregado al carrito!
+</div>
+
+<!-- DETALLES DEL PRODUCTO -->
+<div id="ventana-producto" class="ventana-producto"
+     onclick="cerrarDetalleFondo(event)">
+
+    <div class="contenido-detalle">
+        <button class="cerrar-detalle" type="button"
+                onclick="cerrarDetalle()">&times;</button>
+
+        <img id="detalle-imagen" src="" alt="Producto">
+
+        <div class="informacion-detalle">
+            <h2 id="detalle-nombre"></h2>
+            <p id="detalle-marca"></p>
+            <p id="detalle-descripcion"></p>
+            <h3 id="detalle-precio"></h3>
+
+            <button id="detalle-agregar" type="button">
+                Agregar al carrito
+            </button>
+        </div>
+    </div>
+</div>
+
+<footer>
+    <p>BrillaBeuty | Tu belleza, nuestra pasión</p>
+</footer>
+
+</body>
+</html>

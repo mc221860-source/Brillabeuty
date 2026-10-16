@@ -1,0 +1,99 @@
+```html
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contacto | BrillaBeuty</title>
+    <link rel="stylesheet" href="css/estilos.css">
+</head>
+<body>
+
+    <header>
+        <h1>BrillaBeuty</h1>
+        <p>Tu belleza, nuestra pasión</p>
+    </header>
+
+    <nav>
+        <a href="index.html">Inicio</a>
+        <a href="productos.html">Productos</a>
+        <a href="contacto.html">Contacto</a>
+        <a href="nosotros.html">Sobre nosotros</a>
+        <a href="ubicacion.html">Ubicación</a>
+    </nav>
+
+    <main>
+        <h2>Contáctanos</h2>
+        <p>¿Tienes alguna pregunta? Escríbenos y te ayudaremos.</p>
+
+        <form id="formulario-contacto">
+            <label for="nombre">Nombre completo:</label>
+            <input type="text" id="nombre" required>
+
+            <label for="correo">Correo electrónico:</label>
+            <input type="email" id="correo" required>
+
+            <label for="asunto">Asunto:</label>
+            <select id="asunto" required>
+                <option value="">Selecciona una opción</option>
+                <option value="Información sobre productos">Información sobre productos</option>
+                <option value="Estado de mi compra">Estado de mi compra</option>
+                <option value="Cambios o devoluciones">Cambios o devoluciones</option>
+                <option value="Otro">Otro</option>
+            </select>
+
+            <label for="mensaje">Tu mensaje:</label>
+            <textarea id="mensaje" rows="5" required></textarea>
+
+            <button type="submit">Enviar por WhatsApp</button>
+        </form>
+
+        <section class="contenedor-informacion">
+            <h3>También puedes escribirnos directamente</h3>
+            <p>Estamos disponibles para resolver tus dudas sobre nuestros productos.</p>
+
+            <button type="button" onclick="abrirWhatsAppContacto()">
+                Hablar por WhatsApp
+            </button>
+        </section>
+    </main>
+
+    <footer>
+        <p>BrillaBeuty | Tu belleza, nuestra pasión</p>
+    </footer>
+
+    <script>
+        // CAMBIA ESTE NÚMERO POR TU WHATSAPP
+        const numeroWhatsApp = "573136096060";
+
+        document.getElementById("formulario-contacto").addEventListener("submit", function(evento) {
+            evento.preventDefault();
+
+            const nombre = document.getElementById("nombre").value;
+            const correo = document.getElementById("correo").value;
+            const asunto = document.getElementById("asunto").value;
+            const mensaje = document.getElementById("mensaje").value;
+
+            const texto = "Hola, soy " + nombre +
+                ". Mi correo es: " + correo +
+                ". Asunto: " + asunto +
+                ". Mensaje: " + mensaje;
+
+            const enlace = "https://wa.me/" + numeroWhatsApp +
+                "?text=" + encodeURIComponent(texto);
+
+            window.open(enlace, "_blank");
+        });
+
+        function abrirWhatsAppContacto() {
+            const texto = "Hola, quiero información sobre los productos de BrillaBeuty.";
+            window.open(
+                "https://wa.me/" + numeroWhatsApp + "?text=" + encodeURIComponent(texto),
+                "_blank"
+            );
+        }
+    </script>
+
+</body>
+</html>
+```
