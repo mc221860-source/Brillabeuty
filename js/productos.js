@@ -1,85 +1,82 @@
-
 const productos = [
+
     // BASES
-    ["Base liquida", "Blomshell", "Bases", 45000, "base1.jpg"],
-    ["Base liquida", "Atenea", "Bases", 52000, "base2.jpg"],
-    ["Base liquida", "Nars", "Bases", 40000, "base3.jpg"],
-    ["Base liquida", "Lula", "Bases", 30000, "base4.jpg"],
-    ["Base liquida", "Super", "Bases", 28000, "base5.jpg"],
+    ["Base líquida", "Blomshell", "Bases", 45000, "imagenes/base1.jpg"],
+    ["Base líquida", "Atenea", "Bases", 52000, "imagenes/base2.jpg"],
+    ["Base líquida", "Nars", "Bases", 40000, "imagenes/base3.jpg"],
+    ["Base líquida", "Lula", "Bases", 30000, "imagenes/base4.jpg"],
+    ["Base líquida", "Super", "Bases", 28000, "imagenes/base5.jpg"],
 
     // RUBORES
-    ["Rubor", "Sheglam", "Rubores", 22000, "rubor1.jpg"],
-    ["Rubor", "Rare Beauty", "Rubores", 95000, "rubor2.jpg"],
-    ["Rubor", "Atenea", "Rubores", 45000, "rubor3.jpg"],
-    ["Rubor",  "Pixi", "Rubores", 30000, "rubor4.jpg"],
-    ["Rubor", "Dior", "Rubores", 20000, "rubor5.jpg"],
+    ["Rubor", "Sheglam", "Rubores", 22000, "imagenes/rubor1.jpg"],
+    ["Rubor", "Rare Beauty", "Rubores", 20000, "imagenes/rubor2.jpg"],
+    ["Rubor", "Atenea", "Rubores", 16000, "imagenes/rubor3.jpg"],
+    ["Rubor", "Pixi", "Rubores", 25000, "imagenes/rubor4.jpg"],
+    ["Rubor", "Dior", "Rubores", 65000, "imagenes/rubor5.jpg"],
 
     // LABIALES
-    ["Labial", "YSL", "Labiales", 18000, "labial1.jpg"],
-    ["Labial", "Dior", "Labiales", 85000, "labial2.jpg"],
-    ["Labial", "Atenea", "Labiales", 28000, "labial3.jpg"],
-    ["Labial", "MAC", "Labiales", 40000, "labial4.jpg"],
-    ["Labial", "Vogue", "Labiales", 19000, "labial5.jpg"],
+    ["Labial", "YSL", "Labiales", 60000, "imagenes/labial1.jpg"],
+    ["Labial", "Dior", "Labiales", 85000, "imagenes/labial2.jpg"],
+    ["Labial", "Atenea", "Labiales", 28000, "imagenes/labial3.jpg"],
+    ["Labial", "MAC", "Labiales", 40000, "imagenes/labial4.jpg"],
+    ["Labial", "Vogue", "Labiales", 19000, "imagenes/labial5.jpg"],
 
     // PESTAÑINAS
-    ["Pestañina", "Maybelline", "Pestañinas", 35000, "pestañina1.jpg"],
-    ["Pestañina", "L'Oréal", "Pestañinas", 45000, "pestañina2.jpg"],
-    ["Pestañina", "Vogue", "Pestañinas", 22000, "pestañina3.jpg"],
-    ["Pestañina", "Essence", "Pestañinas", 25000, "pestañina4.jpg"],
-    ["Pestañina", "Prosa", "Pestañinas", 32000, "pestañina5.jpg"],
+    ["Pestañina", "Maybelline", "Pestañinas", 20000, "imagenes/pestañina1.jpg"],
+    ["Pestañina", "L'Oréal", "Pestañinas", 25000, "imagenes/pestañina2.jpg"],
+    ["Pestañina", "Vogue", "Pestañinas", 22000, "imagenes/pestañina3.jpg"],
+    ["Pestañina", "Essence", "Pestañinas", 25000, "imagenes/pestañina4.jpg"],
+    ["Pestañina", "Prosa", "Pestañinas", 27000, "imagenes/pestañina5.jpg"],
 
+    // DELINEADORES
+    ["Delineador", "Prosa", "Delineadores", 15000, "imagenes/delineador1.jpg"],
+    ["Delineador", "Sephora", "Delineadores", 20000, "imagenes/delineador2.jpg"],
+    ["Delineador", "NYX", "Delineadores", 14000, "imagenes/delineador3.jpg"],
+    ["Delineador", "Beauty Creations", "Delineadores", 25000, "imagenes/delineador4.jpg"],
+    ["Delineador", "Elaya", "Delineadores", 10000, "imagenes/delineador5.jpg"],
 
-    //DELINEADORES
-    ["Delineador", "Prosa", "Delineador", 18000, "delineador1.jpg"],
-    ["Delineador", "Sephora", "Delineador", 18000, "delineador2.jpg"],
-    ["Delineador", "NYX", "Delineador", 18000, "delineador3.jpg"],
-    ["Delineador", "Beauty creation", "Delineador", 18000, "delineador4.jpg"],
-    ["Delineador", "Elaya", "Delineador", 18000, "delineador5.jpg"],
-
-    
     // SOMBRAS
-    ["Paleta de sombras", "Beauty Creations", "Sombras", 35000, "sombras1.jpg"],
-    ["Paleta de sombras", "NYX", "Sombras", 55000, "sombras2.jpg"],
-    ["Sombras de sombras", "Dior", "Sombras", 30000, "sombras3.jpg"],
-    ["Paleta de sombras", "Ruby Rose", "Sombras", 25000, "sombras4.jpg"],
-    ["Paleta de sombras", "MAC", "Sombras", 120000, "sombras5.jpg"],
+    ["Paleta de sombras", "Beauty Creations", "Sombras", 35000, "imagenes/sombras1.jpg"],
+    ["Paleta de sombras", "NYX", "Sombras", 55000, "imagenes/sombras2.jpg"],
+    ["Paleta de sombras", "Dior", "Sombras", 30000, "imagenes/sombras3.jpg"],
+    ["Paleta de sombras", "Ruby Rose", "Sombras", 25000, "imagenes/sombras4.jpg"],
+    ["Paleta de sombras", "MAC", "Sombras", 30000, "imagenes/sombras5.jpg"],
 
     // SKINCARE
-    ["Limpiador facial", "Pond´s", "Skincare", 35000, "limpiador.jpg"],
-    ["Tónico facial", "Garnier", "Skincare", 25000, "tonico.jpg"],
-    ["Sérum facial", "Clinique", "Skincare", 65000, "serum.jpg"],
-    ["Crema hidratante", "Neutrogena", "Skincare", 28000, "crema1.jpg"],
-    ["Protector solar", "Nivea", "Skincare", 50000, "protector.jpg"],
-    ["Agua micelar", "Garnier", "Skincare", 22000, "agua-micelar.jpg"],
-    ["Exfoliante facial", "Eucerin", "Skincare", 32000, "exfoliante.jpg"],
-    ["Mascarilla facial", "Garnier", "Skincare", 18000, "mascarilla.jpg"],
-    ["Contorno de ojos", "Nivea", "Skincare", 30000, "contorno-ojos.jpg"],
-    ["Bálsamo labial", "Vaseline", "Skincare", 12000, "balsamo.jpg"],
-
+    ["Limpiador facial", "Pond's", "Skincare", 35000, "imagenes/limpiador.jpg"],
+    ["Tónico facial", "Garnier", "Skincare", 25000, "imagenes/tonico.jpg"],
+    ["Sérum facial", "Clinique", "Skincare", 30000, "imagenes/serum.jpg"],
+    ["Crema hidratante", "Neutrogena", "Skincare", 28000, "imagenes/crema1.jpg"],
+    ["Protector solar", "Nivea", "Skincare", 50000, "imagenes/protector.jpg"],
+    ["Agua micelar", "Garnier", "Skincare", 22000, "imagenes/agua-micelar.jpg"],
+    ["Exfoliante facial", "Eucerin", "Skincare", 32000, "imagenes/exfoliante.jpg"],
+    ["Mascarilla facial", "Garnier", "Skincare", 18000, "imagenes/mascarilla.jpg"],
+    ["Contorno de ojos", "Nivea", "Skincare", 30000, "imagenes/contorno-ojos.jpg"],
+    ["Bálsamo labial", "Vaseline", "Skincare", 10000, "imagenes/balsamo.jpg"],
 
     // CORRECTORES
-    ["Corrector", "Maybelline", "Correctores", 32000, "corrector1.jpg"],
-    ["Corrector", "L'Oréal", "Correctores", 40000, "corrector2.jpg"],
-    ["Corrector", "NYX", "Correctores", 38000, "corrector3.jpg"],
-    ["Corrector", "Ruby Rose", "Correctores", 16000, "corrector4.jpg"],
-    ["Corrector", "Blomshell", "Correctores", 35000, "corrector5.jpg"],
+    ["Corrector", "Maybelline", "Correctores", 32000, "imagenes/corrector1.jpg"],
+    ["Corrector", "L'Oréal", "Correctores", 40000, "imagenes/corrector2.jpg"],
+    ["Corrector", "NYX", "Correctores", 38000, "imagenes/corrector3.jpg"],
+    ["Corrector", "Ruby Rose", "Correctores", 20000, "imagenes/corrector4.jpg"],
+    ["Corrector", "Blomshell", "Correctores", 35000, "imagenes/corrector5.jpg"],
 
     // POLVOS
-    ["Polvo", "Vogue", "Polvos", 24000, "polvo1.jpg"],
-    ["Polvo", "Maybelline", "Polvos", 35000, "polvo2.jpg"],
-    ["Polvo", "Ruby Rose", "Polvos", 18000, "polvo3.jpg"],
-    ["Polvo", "Bissu", "Polvos", 30000, "polvo4.jpg"],
-    ["Polvo", "MAC", "Polvos", 100000, "polvo5.jpg"],
+    ["Polvo", "Vogue", "Polvos", 15000, "imagenes/polvo1.jpg"],
+    ["Polvo", "Maybelline", "Polvos", 20000, "imagenes/polvo2.jpg"],
+    ["Polvo", "Ruby Rose", "Polvos", 22000, "imagenes/polvo3.jpg"],
+    ["Polvo", "Bissu", "Polvos", 18000, "imagenes/polvo4.jpg"],
+    ["Polvo", "MAC", "Polvos", 250000, "imagenes/polvo5.jpg"],
 
     // ILUMINADORES
-    ["Iluminador", "Rare Beauty", "Iluminadores", 90000, "iluminador1.jpg"],
-    ["Iluminador", "Bissu", "Iluminadores", 25000, "iluminador2.jpg"],
-    ["Iluminador", "Milani", "Iluminadores", 42000, "iluminador3.jpg"],
-    ["Iluminador", "NYX", "Iluminadores", 38000, "iluminador4.jpg"],
-    ["Iluminador", "sheglam", "Iluminadores", 22000, "iluminador5.jpg"],
+    ["Iluminador", "Rare Beauty", "Iluminadores", 26000, "imagenes/iluminador1.jpg"],
+    ["Iluminador", "Bissu", "Iluminadores", 25000, "imagenes/iluminador2.jpg"],
+    ["Iluminador", "Milani", "Iluminadores", 24000, "imagenes/iluminador3.jpg"],
+    ["Iluminador", "NYX", "Iluminadores", 18000, "imagenes/iluminador4.jpg"],
+    ["Iluminador", "Sheglam", "Iluminadores", 30000, "imagenes/iluminador5.jpg"]
 
-    
 ];
+
 
 
 let carrito = [];
